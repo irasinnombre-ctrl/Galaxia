@@ -139,23 +139,6 @@ window.addEventListener('resize', () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-let player;
-
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '0',
-    width: '0',
-    videoId: 'vGJTaP6anOU',
-    playerVars: {
-      autoplay: 0,
-      loop: 1,
-      playlist: 'vGJTaP6anOU',
-      controls: 0,
-      playsinline: 1
-    }
-  });
-}
-
 const musica = document.getElementById("musica");
 
 document.addEventListener("click", () => {
